@@ -52,36 +52,36 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [
+const Tele = [
   {
     id: 1,
-    name: "KN-H21PA",
-    img: "https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-6/285280888_5463033740414948_4545125452146121791_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=NO4F9mez4VEAX-9OcDl&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT9ouCaGnAUhbH0OVnUtz1P7h0XLqM_dgu0nGOBFBndrDw&oe=629C9527",
+    name: "Bộ thu phát Wifi cho Camera",
+    img: "https://baophong.vn/wp-content/uploads/2020/07/bo-thu-phat-tin-hieu-trong-thang-may-hikvision-DS-3WF01C-2N.jpg",
     desc: "Sản phẩm camera giám sát KBVISION KB.ONE KN-H41P là một trong những thiết bị camera nổi bật đến từ thương hiệu KBVISION.",
   },
 
   {
     id: 2,
-    name: "Ezviz C6N 1080P",
-    img: "https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/285237108_5463034443748211_8788695431355048861_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=K0BfG2l5NHQAX_dKFxG&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT_y2bCqkx_hBCp_HY7fBhZZjqL5vMPHbjpIixDUhV9YJA&oe=629D06AC",
+    name: "Bộ phát wifi không dây iziFi AC Outdoor (AP1200)",
+    img: "https://baophong.vn/wp-content/uploads/2019/09/iziFi-AC-Outdoor-768x576.jpg",
     desc: "Với khả năng quay ngang 355°- quay dọc 55°, C6N 2MP sẽ giúp bạn ghi hình lại toàn bộ mọi hoạt động ở bất cứ vị trí nào. Camera 360 độ hứa hẹn sẽ mang đến cho bạn tất cả mọi khoảnh khắc.",
   },
   {
-    name: " Hikvision DS",
+    name: " Camera chuông cửa Wifi HIKVISION DS-KB6403-WIP",
     id: 3,
-    img: "https://scontent.fsgn8-1.fna.fbcdn.net/v/t39.30808-6/285222220_5463034220414900_6895965939539074484_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=C4aAuo8YnmoAX-PiO8c&_nc_ht=scontent.fsgn8-1.fna&oh=00_AT-LyZYeFnNBnJtw4gbpDyMZcqX-P-oHWB-KIkX8q9WrGg&oe=629DD7A8",
+    img: "https://baophong.vn/wp-content/uploads/2019/08/HIKVISION-DS-KB6403-WIP-1.jpg",
     desc: "Chế độ hồng ngoại tầm nhìn 10m Hai đèn LED hồng ngoại có trên Camera C6N 2MP mang đến những thước phim quay vào ban đêm chi tiết hơn.",
   },
   {
-    name: " Ezviz C3WN",
+    name: " Thiết bị Wifi iziFi AC LR",
     id: 4,
-    img: "https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/285295831_5463034300414892_361538297667109952_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=Ou1hjC7s8fMAX-RusMB&tn=zfXWngEsrQZ0x8Kk&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT92_jiT7eE3ICh_c8aOlt2hvp4R0ad6JFhVaPTIv25O2A&oe=629C2060",
+    img: "https://baophong.vn/wp-content/uploads/2019/09/iziFi-AC-LR-768x768.jpg",
     desc: "Nhờ tính năng đàm thoại 2 chiều trên camera trong nhà C6N 2.0 megapixel, người dùng có thể trò chuyện từ xa với người thân bạn bè ngay trên ứng dụng Ezviz tiện lợi.",
   },
   {
     name: "Hikvision",
     id: 5,
-    img: "https://cdn.tgdd.vn/Files/2021/08/02/1372539/camera-ip-la-gi-uu-nhuoc-diem-va-phan-loai-camer-4.jpg",
+    img: "https://baophong.vn/wp-content/uploads/2019/05/CCTV-HUE1-768x576.png",
     desc: "Với sản phẩm camera không dây C6N 1080P, chúng ta có thể lựa chọn lắp đặt cho bất cứ vị trí nào như treo tường, gắn trần, để bàn,....",
   },
   {
@@ -93,24 +93,24 @@ const cards = [
   {
     name: "Camera Ezviz C2C",
     id: 7,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VjsSbGK4pW5XiK-gnVQAsjlLNH3EEOPBPw&usqp=CAU",
+    img: "https://baophong.vn/wp-content/uploads/2019/05/690_iZiFi_XD6300.png",
     desc: "Khi bạn vào app Ezviz bật chức năng này lên thì đồng nghĩa camera sẽ dừng quay hình và ẩn ống kính về phía sau, phù hợp mỗi khi bạn ở nhà mà không có muốn bị làm phiền bởi camera.",
   },
   {
     name: "IMOU IPC-A22EP-IMOU",
     id: 8,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdx4n1gvdASViHXF5WkTFDYekPb4e8yguQTg&usqp=CAU",
+    img: "https://baophong.vn/wp-content/uploads/2019/02/iZiFi_A770.png",
     desc: "Camera Ezviz C6N 1080P có khả năng kết nối bằng cả wifi và mạng LAN, sử dụng cổng kết nối USB thông dụng.",
   },
   {
     name: " Ezviz C1C",
     id: 9,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxjKq-NLgyr2IcvxxVzDNTNPwbSL3zKCnuQ&usqp=CAU",
+    img: "https://baophong.vn/wp-content/uploads/2019/02/iZiFi_A770.png",
     desc: "dòng sản phẩm camera quan sát không dây trong nhà mới nhất của hãng HiLook. Camera IP Wifi HiLook được thiết kế với kiểu dáng và màu sắc hiện đại phù hợp cho những ngôi nhà thế hệ mới.",
   },
 ];
 
-export default function Album() {
+export default function Battery() {
   const classes = useStyles();
 
   return (
@@ -156,7 +156,7 @@ export default function Album() {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
+            {Tele.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
