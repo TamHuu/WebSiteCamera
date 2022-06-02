@@ -162,7 +162,7 @@ export default function Album() {
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
-                    style={{ padding: "118px 0" }}
+                    style={{ padding: "118px 0", height: "300px" }}
                     className={classes.cardMedia}
                     image={card.img}
                     title="Image title"
@@ -172,11 +172,13 @@ export default function Album() {
                   />
 
                   <CardContent className={classes.cardContent}>
-                    <Typography>{card.name}</Typography>
+                    <Typography style={{ color: "red" }}>
+                      {card.name}
+                    </Typography>
                     <Typography>{card.desc}</Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="big" color="primary">
                       xem chi tiết sản phẩm
                     </Button>
                   </CardActions>
