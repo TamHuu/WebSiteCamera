@@ -12,7 +12,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import { hover } from "@testing-library/user-event/dist/hover";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -110,9 +110,12 @@ const cards = [
   },
 ];
 
-export default function Album() {
+export default function Camera() {
   const classes = useStyles();
-
+  const history = useHistory();
+  const handleClickClipper = () => {
+    history.push("/");
+  };
   return (
     <React.Fragment>
       <CssBaseline />
@@ -133,6 +136,7 @@ export default function Album() {
               align="center"
               color="textPrimary"
               gutterBottom
+              onClick={handleClickClipper}
             >
               Camera IP
             </Typography>

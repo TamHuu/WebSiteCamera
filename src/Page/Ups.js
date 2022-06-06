@@ -12,8 +12,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import { hover } from "@testing-library/user-event/dist/hover";
-
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
@@ -66,51 +64,9 @@ const Tele = [
     img: "https://baophong.vn/wp-content/uploads/2019/09/iziFi-AC-Outdoor-768x576.jpg",
     desc: "Với khả năng quay ngang 355°- quay dọc 55°, C6N 2MP sẽ giúp bạn ghi hình lại toàn bộ mọi hoạt động ở bất cứ vị trí nào. Camera 360 độ hứa hẹn sẽ mang đến cho bạn tất cả mọi khoảnh khắc.",
   },
-  {
-    name: " Camera chuông cửa Wifi HIKVISION DS-KB6403-WIP",
-    id: 3,
-    img: "https://baophong.vn/wp-content/uploads/2019/08/HIKVISION-DS-KB6403-WIP-1.jpg",
-    desc: "Chế độ hồng ngoại tầm nhìn 10m Hai đèn LED hồng ngoại có trên Camera C6N 2MP mang đến những thước phim quay vào ban đêm chi tiết hơn.",
-  },
-  {
-    name: " Thiết bị Wifi iziFi AC LR",
-    id: 4,
-    img: "https://baophong.vn/wp-content/uploads/2019/09/iziFi-AC-LR-768x768.jpg",
-    desc: "Nhờ tính năng đàm thoại 2 chiều trên camera trong nhà C6N 2.0 megapixel, người dùng có thể trò chuyện từ xa với người thân bạn bè ngay trên ứng dụng Ezviz tiện lợi.",
-  },
-  {
-    name: "Hikvision",
-    id: 5,
-    img: "https://baophong.vn/wp-content/uploads/2019/05/CCTV-HUE1-768x576.png",
-    desc: "Với sản phẩm camera không dây C6N 1080P, chúng ta có thể lựa chọn lắp đặt cho bất cứ vị trí nào như treo tường, gắn trần, để bàn,....",
-  },
-  {
-    name: "VDTECH VDT",
-    id: 6,
-    img: "https://gotechcamera.com/wp-content/uploads/2018/04/yeu-cau-ky-thuat-he-thong-camera-ip.jpg",
-    desc: "Khi có chuyển động đi qua, camera giám sát sẽ chủ động ghi hình và thông báo về điện thoại kèm theo đó là hình ảnh kèm theo để bạn chủ động xử lý tình huống ",
-  },
-  {
-    name: "Camera Ezviz C2C",
-    id: 7,
-    img: "https://baophong.vn/wp-content/uploads/2019/05/690_iZiFi_XD6300.png",
-    desc: "Khi bạn vào app Ezviz bật chức năng này lên thì đồng nghĩa camera sẽ dừng quay hình và ẩn ống kính về phía sau, phù hợp mỗi khi bạn ở nhà mà không có muốn bị làm phiền bởi camera.",
-  },
-  {
-    name: "IMOU IPC-A22EP-IMOU",
-    id: 8,
-    img: "https://baophong.vn/wp-content/uploads/2019/02/iZiFi_A770.png",
-    desc: "Camera Ezviz C6N 1080P có khả năng kết nối bằng cả wifi và mạng LAN, sử dụng cổng kết nối USB thông dụng.",
-  },
-  {
-    name: " Ezviz C1C",
-    id: 9,
-    img: "https://baophong.vn/wp-content/uploads/2019/02/iZiFi_A770.png",
-    desc: "dòng sản phẩm camera quan sát không dây trong nhà mới nhất của hãng HiLook. Camera IP Wifi HiLook được thiết kế với kiểu dáng và màu sắc hiện đại phù hợp cho những ngôi nhà thế hệ mới.",
-  },
 ];
 
-export default function Telecommunications() {
+export default function Ups() {
   const classes = useStyles();
 
   return (
@@ -134,7 +90,7 @@ export default function Telecommunications() {
               color="textPrimary"
               gutterBottom
             >
-              Camera IP
+              UPS,TỦ RACK
             </Typography>
             <Typography
               variant="h5"

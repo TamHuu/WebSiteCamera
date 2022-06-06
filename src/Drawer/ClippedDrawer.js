@@ -11,12 +11,13 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import BatteryChargingFullIcon from "@material-ui/icons/BatteryChargingFull";
-import Album from "./Album";
+import Album from "../Page/Camera";
 import { Avatar } from "@material-ui/core";
 import VideocamIcon from "@material-ui/icons/Videocam";
 import SettingsRemoteIcon from "@material-ui/icons/SettingsRemote";
 import PrintIcon from "@material-ui/icons/Print";
 import BookIcon from "@material-ui/icons/Book";
+import { useHistory } from "react-router-dom";
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -44,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ClippedDrawer() {
   const classes = useStyles();
+  const history = useHistory();
 
   return (
     <div className={classes.root}>
@@ -91,7 +93,23 @@ export default function ClippedDrawer() {
               "UPS,Tủ Rack",
               "Máy in",
             ].map((text, index) => (
-              <ListItem button key={index}>
+              <ListItem
+                button
+                key={index}
+                onClick={() => {
+                  if (index === 0) {
+                    history.push("/");
+                  } else if (index === 1) {
+                    history.push("/Telecom");
+                  } else if (index === 2) {
+                    history.push("/Battery");
+                  } else if (index === 3) {
+                    history.push("/Ups");
+                  } else if (index === 4) {
+                    history.push("/Scanner");
+                  }
+                }}
+              >
                 <ListItemIcon>
                   {index === 0 && <VideocamIcon />}
                   {index === 1 && <SettingsRemoteIcon />}
@@ -106,9 +124,6 @@ export default function ClippedDrawer() {
           <Divider />
         </div>
       </Drawer>
-      <main className={classes.content}>
-        <Album />
-      </main>
     </div>
   );
 }
